@@ -1,0 +1,71 @@
+'''fresh_tomatoes_1 contains all of the code needed to
+generate a webpage based on the movie instances found below.'''
+
+import fresh_tomatoes_1
+
+# Imports movie_project file which contains my Movie_info class.
+
+import movie_project
+
+
+# All of my movie instances below complete with (title,summary,poster,trailer)
+
+fast_and_furious = movie_project.Movie_info("The Fast and the Furious",
+                                            "Officer Brian O' Connor goes"
+                                            "undercover to infiltrate the"
+                                            "illegal street racing scene.The"
+                                            "lines between racer and cop blur"
+                                            "as he tries to find out who is"
+                                            "behind a recent string of highway"
+                                            "robberies involving semi-trucks.",
+                                            "http://www.impawards.com/2001/posters/fast_and_the_furious.jpg",  # NOQA
+                                            "https://www.youtube.com/watch?v=ZsJz2TJAPjw")  # NOQA
+
+
+the_thing = movie_project.Movie_info("The Thing",
+                                     "A teams fight for survival while traped"
+                                     "in Antartica with a shape shifting"
+                                     "alien. Who do you trust?",
+                                     "http://m.cdn.blog.hu/ho/horrormirror/image/the-thing-carpenter-post.jpg",  # NOQA
+                                     "https://www.youtube.com/watch?v=p35JDJLa9ec")  # NOQA
+
+
+resident_evil = movie_project.Movie_info(
+                                        "Resident Evil",
+                                        "The Umbrella Corporation is just a"
+                                        "normal pharmaceutical company."
+                                        "Or is it? What horrors lurk beneath"
+                                        "the depths of Raccon City?",
+                                        "http://www.joblo.com/posters/images/full/2002-resident_evil-1.jpg",  # NOQA
+                                        "https://www.youtube.com/watch?v=kEutwdia8n0")  # NOQA
+
+
+the_13th_warrior = movie_project.Movie_info("The 13th Warrior",
+                                            "The story of Ibn Fadlan and his"
+                                            "travel with the Norse men",
+                                            "http://img.moviepostershop.com/the-13th-warrior-movie-poster-1998-1020194548.jpg",  # NOQA
+                                            "https://www.youtube.com/watch?v=JKkqf4slixg")  # NOQA
+
+
+scary_movie_2 = movie_project.Movie_info("Scary Movie 2",
+                                         "The sequel to the hit comedy",
+                                         "http://img.moviepostershop.com/scary-movie-2-movie-poster-2001-1020211016.jpg",  # NOQA
+                                         "https://www.youtube.com/watch?v=zCFZUZxBVuI")  # NOQA
+
+
+army_of_darkness = movie_project.Movie_info("Army of Darkness",
+                                            "Ash Williams travels back in time"
+                                            "to fight the Army of Darkness",
+                                            "https://images-na.ssl-images-amazon.com/images/I/51QgCAqNPcL._SY450_.jpg",  # NOQA
+                                            "https://www.youtube.com/watch?v=CZ-wU5RXw2o")  # NOQA
+
+
+''' A list containing all of the movie instances to be
+used with fresh_tomatoes to generate the site.'''
+
+movie_list = [fast_and_furious,
+              the_thing, resident_evil,
+              the_13th_warrior, scary_movie_2,
+              army_of_darkness]
+
+fresh_tomatoes_1.open_movies_page(movie_list)
