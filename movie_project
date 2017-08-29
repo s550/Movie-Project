@@ -1,0 +1,14 @@
+'''class Movie_info is used to make an instance
+   that contains information about a movie.'''
+
+
+class Movie_info():
+    '''The __init__ function is a constructor that takes the parameters
+       that were given to an instance of Movie_info and assigns them to
+       the correct properties using self.Self refrences any instance of
+       Movie_info that is created.'''
+    def __init__(self, title, summary, poster, trailer):
+        self.title = title
+        self.summary = summary
+        self.poster = poster
+        self.trailer = trailer
